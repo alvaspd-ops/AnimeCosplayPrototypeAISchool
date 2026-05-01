@@ -1,0 +1,20 @@
+javascript id="d8s1mn"
+// script.js
+
+function saibaMais() {
+    document.getElementById("sobre").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+// Mensagem ao enviar formulário
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.querySelector("form");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Mensagem enviada com sucesso! Entraremos em contato.");
+        form.reset();
+    });
+});
+

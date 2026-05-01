@@ -1,0 +1,167 @@
+```css
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(90deg, #ff0055, #7700ff);
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+.banner {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('https://images.unsplash.com/photo-1541560052-5e137f229371') center/cover;
+    text-align: center;
+    padding: 20px;
+}
+
+.banner h1 {
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 10px black;
+}
+
+.banner p {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+.banner button {
+    padding: 12px 25px;
+    border: none;
+    background: #ff0055;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.banner button:hover {
+    background: #7700ff;
+}
+
+section {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #ff0055;
+    font-size: 2.2em;
+}
+
+.programacao ul {
+    list-style: none;
+    font-size: 1.2em;
+}
+
+.programacao li {
+    margin: 10px 0;
+    padding: 10px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+}
+
+.contato form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin-inline: auto;
+}
+
+.contato input,
+.contato textarea {
+    margin: 10px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contato button {
+    padding: 12px;
+    background: #7700ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contato button:hover {
+    background: #ff0055;
+}
+
+footer {
+    background: #000;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+@media(max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 15px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .banner h1 {
+        font-size: 2.5em;
+    }
+}
+```
